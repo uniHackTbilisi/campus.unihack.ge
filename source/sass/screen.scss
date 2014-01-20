@@ -1,6 +1,7 @@
-@include 'compass';
-@include 'partials';
-
+@import "compass";
+@import "compass/reset";
+@import "config";
+@import "partials";
 
 body,html{
     height:100%;

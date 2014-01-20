@@ -1,27 +1,27 @@
 {
     "source": {
         "base": "./source/",
-        "scripts": "<%= source.base %>scripts/",
-        "fonts": "<%= source.base %>fonts/",
-        "images": "<%= source.base %>images/",
-        "sass": "<%= source.base %>sass/"
+        "scripts": "<%= config.source.base %>scripts/",
+        "fonts": "<%= config.source.base %>fonts/",
+        "images": "<%= config.source.base %>images/",
+        "sass": "<%= config.source.base %>sass/"
     },
     "compass": {
         "noLineComments": true,
-        "sassDir": "<%= source.base %>sass",
-        "cssDir": "<%= build.css %>",
+        "sassDir": "<%= config.source.base %>sass",
+        "cssDir": "<%= config.build.css %>",
         "outputStyle": "compact",
-        "fontsDir": "<%= source.fonts %>",
-        "javascriptsDir": "<%= source.scripts %>",
-        "imagesDir": "<%= source.images %>",
+        "fontsDir": "<%= config.source.fonts %>",
+        "javascriptsDir": "<%= config.source.scripts %>",
+        "imagesDir": "<%= config.source.images %>",
         "httpPath": "/"
     },
     "build": {
         "base": "./build/",
-        "css": "<%= build.base %>css/",
-        "scripts": "<%= build.base %>scripts/",
-        "fonts": "<%= build.base %>fonts/",
-        "images": "<%= build.base %>images/"
+        "css": "<%= config.build.base %>css/",
+        "scripts": "<%= config.build.base %>scripts/",
+        "fonts": "<%= config.build.base %>fonts/",
+        "images": "<%= config.build.base %>images/"
     },
     "web": {
         "port": 3000,

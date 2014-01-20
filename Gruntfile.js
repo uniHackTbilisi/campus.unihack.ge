@@ -36,10 +36,7 @@ module.exports = function(grunt) {
             }
         },
         slim: {
-            slim: {
-                options: { // Target options
-                    style: 'expanded'
-                },
+            build: {
                 files: {
                     '<%= config.build.base %>index.html': '<%= config.source.base %>index.slim',
                 }
@@ -91,7 +88,7 @@ module.exports = function(grunt) {
                 tasks: ['slim:build']
             },
             html: {
-                files: ['<%= config.source.base %>*.html'],
+                files: ['<%= config.build.base %>*.html'],
                 options: {
                     livereload: live,
                 }
@@ -137,13 +134,17 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-slim');
 
-    grunt.registerTask('default ', [
-        'clean:build ',
-        'copy:build ',
-        'compass:build ',
-        'slim:build ',
-        'connect:server ',
-        'watch '
+    grunt.registerTask('default', [
+        'clean:build',
+        'copy',
+        'compass:build',
+        'slim:build',
+        'connect:server',
+        'watch'
     ]);
-    grunt.registerTask('server ', ['connect:alive ']);
+    grunt.registerTask('look', [
+        'connect:server',
+        'watch'
+    ]);
+    grunt.registerTask('server', ['connect:alive']);
 };
