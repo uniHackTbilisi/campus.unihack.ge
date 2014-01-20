@@ -1,0 +1,17 @@
+{
+  "name": "campus.unihack.ge",
+  "version": "0.0.0",
+  "scripts": {
+    "postuninstall": "bundle install"
+  },
+  "devDependencies": {
+    "connect": "~2.11.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-slim": "~0.1.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0"
+  }
+}

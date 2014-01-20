@@ -1,0 +1,30 @@
+{
+    "source": {
+        "base": "./source/",
+        "scripts": "<%= source.base %>scripts/",
+        "fonts": "<%= source.base %>fonts/",
+        "images": "<%= source.base %>images/",
+        "sass": "<%= source.base %>sass/"
+    },
+    "compass": {
+        "noLineComments": true,
+        "sassDir": "<%= source.base %>sass",
+        "cssDir": "<%= build.css %>",
+        "outputStyle": "compact",
+        "fontsDir": "<%= source.fonts %>",
+        "javascriptsDir": "<%= source.scripts %>",
+        "imagesDir": "<%= source.images %>",
+        "httpPath": "/"
+    },
+    "build": {
+        "base": "./build/",
+        "css": "<%= build.base %>css/",
+        "scripts": "<%= build.base %>scripts/",
+        "fonts": "<%= build.base %>fonts/",
+        "images": "<%= build.base %>images/"
+    },
+    "web": {
+        "port": 3000,
+        "origin": "*"
+    }
+}
