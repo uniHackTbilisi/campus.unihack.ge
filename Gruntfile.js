@@ -24,14 +24,7 @@ module.exports = function(grunt) {
         compass: {
             build: {
                 options: {
-                    noLineComments: '<%= config.compass.noLineComments %>',
-                    sassDir: '<%= config.compass.sassDir %>',
-                    cssDir: '<%= config.compass.cssDir %>',
-                    outputStyle: '<%= config.compass.outputStyle %>',
-                    fontsDir: '<%= config.compass.fontsDir %>',
-                    javascriptsDir: '<%= config.compass.javascriptsDir %>',
-                    imagesDir: '<%= config.compass.imagesDir %>',
-                    httpPath: '<%= config.compass.httpPath %>'
+                    config: '<%= config.compass %>'
                 }
             }
         },

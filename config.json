@@ -6,16 +6,7 @@
         "images": "<%= config.source.base %>images/",
         "sass": "<%= config.source.base %>sass/"
     },
-    "compass": {
-        "noLineComments": true,
-        "sassDir": "<%= config.source.base %>sass",
-        "cssDir": "<%= config.build.css %>",
-        "outputStyle": "compact",
-        "fontsDir": "<%= config.source.fonts %>",
-        "javascriptsDir": "<%= config.source.scripts %>",
-        "imagesDir": "<%= config.source.images %>",
-        "httpPath": "/"
-    },
+    "compass": "<%= config.source.base %>sass/config.rb",
     "build": {
         "base": "./build/",
         "css": "<%= config.build.base %>css/",
