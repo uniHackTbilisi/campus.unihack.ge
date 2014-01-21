@@ -3,71 +3,20 @@
 @import "config";
 @import "partials";
 
+
 body,html{
     height:100%;
     font-size:10px;
 }
 
-header{
-    @include user-select(none);
-    height:$header-height;
-    background-color:$header-bg;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    nav ul {
-        max-width:63em; 
-        margin:0 auto;
-        li{
-            margin:0 5.5%;
-            float:left;
-            width: 14%;
-            height: $header-height;
-            a{
-                text-align: center;
-                line-height:$header-height/$header-font-size*1em;
-                font-size:$header-font-size;
-                display:block;
-                height: 100%;
-                color:$header-color;
-                text-decoration:none;
-                position:relative;
-                @include background-image(linear-gradient(top, $header-color 0%,$header-color 100%));
-                background-repeat: no-repeat;
-                background-size: 5em/$header-font-size*1em 0.6em/$header-font-size*1em;
-                background-position: 50% -0.6em/$header-font-size*1em;
-                @include transition(background .2s linear);
-                &.active{
-                    pointer-events: none;
-                    background-position-y:-0.3em/$header-font-size*1em;
-                }
-                &:hover{
-                    background-position-y:0; 
-                }
-                &:active{
-                    background-position-y:-0.4em/$header-font-size*1em; 
-                }
-           }
-        }
-    }
-    .registration{
-        display:none;//todo
-    }
-}
+//===================HEADER===============================
+@import "components/header";
+@import "components/registration";
+@import "components/navigation";
 
-.page-wrapper{
-    background:$page-bg;
-    padding:$header-height 0 $footer-height;
-    height:100%;
-    box-sizing: border-box;
-    width:100%;
-}
-footer{
-    background-color:$footer-bg;
-    height:$footer-height;
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:0;
-}
+//===================PAGE===============================
+@import "components/page";
+@import "components/baner";
+
+//===================FOOTER===============================
+@import "components/footer";

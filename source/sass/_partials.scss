@@ -2,3 +2,7 @@
     $select: unquote($select);
     @include experimental(user-select, $select, -moz, -webkit, not -o, not -ms, -khtml, official);
 }
+@mixin pointer-events($select) {
+    $select: unquote($select);
+    @include experimental(pointer-events, $select, -moz, -webkit, not -o, not -ms, -khtml, official);
+}

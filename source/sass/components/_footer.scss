@@ -1,0 +1,34 @@
+footer{
+    @include user-select(none);
+    background-color:$footer-bg;
+    height:$footer-height;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    .feature{
+        float: left;
+        height:$footer-height;
+        width: 97/3*1%;
+        padding:0 0.5%;
+        position: relative;
+        &:after{
+            content:'';
+            position: absolute;
+            bottom: 0;
+            right: 1em;
+            border:solid $footer-color 0.75em;
+            border-top-color:transparent; 
+            border-left-color:transparent; 
+        }
+        p{
+            white-space: nowrap;
+            width: 100%;                   
+            overflow: hidden;              /* "overflow" value must be different from "visible" */ 
+            text-overflow:    ellipsis;
+            font-size:$footer-font-size;
+            line-height: $footer-height/$footer-font-size*1em;
+            color:$footer-color;
+        }
+    }
+}

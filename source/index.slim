@@ -1,30 +1,65 @@
 doctype html
 html
   head
-    title hack@CAMPUS
     link rel="stylesheet" href="/css/screen.css"
+    title hack@CAMPUS
   body
+    script src="scripts/app.js"
     header
       nav
         .registration
-          span რეგისტრაცია
-          a href="#" მონაწილე / გუნდი
-          a href="#" სტუმარი 
-        ul
+          label.button for="show-checkbox" რეგისტრაცია
+          input#show-checkbox type="checkbox"
+          ul
+            li
+              a href="#" მონაწილე / გუნდი
+            li
+              a href="#" სტუმარი 
+        ul.navigation
           li 
-            a.active href="#" მთავარი
+            a href="#/main" მთავარი
           li 
-            a href="#" სპიკერები
+            a href="#/speaker" სპიკერები
           li 
-            a href="#" პროგრამა
+            a href="#/program" პროგრამა
           li 
-            a href="#" სპონსორები
-    div.page-wrapper
-      section.page.page-main
-      section.page.page-speaker
-      section.page.page-program
-      section.page.page-sponsor
+            a href="#/sponsor" სპონსორები
+    .page-wrapper
+      .page-scroll-wrapper
+        section.page#main
+          .baner-wrapper
+            .header-wrapper
+              h1 hack@CAMPUS
+            .features-wrapper
+              ul
+                li 300+ სუდენტი და მოსწავლე
+                li 5+ უნივერსიტეტი
+                li 20+ პროფესიონალი
+                li 10+ სპიკერი
+            .date-wrapper
+              date
+                b 14-15-16
+                |  მარტი 2014
+            .prize-wrapper
+              .prize
+                .top
+                .curve-top
+                .curve-bottom
+                .center-box-curve
+                .center-box
+                  .fund data-after="ლარი" data-before="საპრიზო ფონდი" 
+                    | 20,000
+                .bottom
+        section.page#speaker 
+          h1.soon მალე...
+        section.page#program
+          h1.soon მალე...
+        section.page#sponsor
+          h1.soon მალე...
     footer
-      section.feature.food ჩვენ გვაქვს საჭმელი, სასმელი და უამრავი პრიზი
-      section.feature.duration თქვენ გაქვთ 48 საათი, რათა შექმნათ რაიმე მაგარი
-      section.feature.place დიდი დიღმის საუნივერსიტეტო კამპუსი
+      section.feature.food 
+        p ჩვენ გვაქვს საჭმელი, სასმელი და უამრავი პრიზი
+      section.feature.duration 
+        p თქვენ გაქვთ 48 საათი, რათა შექმნათ რაიმე მაგარი
+      section.feature.place 
+        p დიდი დიღმის საუნივერსიტეტო კამპუსი
