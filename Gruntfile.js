@@ -3,6 +3,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         config: grunt.file.readJSON('config.json'),
+        secret: grunt.file.readJSON('secret.json'),
         connect: {
             server: {
                 options: {
@@ -117,7 +118,24 @@ module.exports = function(grunt) {
                     dest: '<%= config.build.images %>/'
                 }]
             }
-        }
+        },
+        sftp: {
+          deploy: {
+            files: {
+              "./": "<%= config.build.base%>**"
+            },
+            options: {
+              path: '<%= secret.path %>',
+              host: '<%= secret.host %>',
+              username: '<%= secret.username %>',
+              password: '<%= secret.password %>',
+              port : '<%= secret.port %>',
+              srcBasePath: '<%= config.build.base%>',
+              createDirectories: true,
+              showProgress: true
+            }
+          }
+        },
     });
 
     grunt.loadNpmTasks('grunt-contrib-connect');
@@ -126,14 +144,22 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-slim');
+    grunt.loadNpmTasks('grunt-ssh');
 
-    grunt.registerTask('default', [
+    grunt.registerTask('deploy', [
+        'build',
+        'sftp:deploy'
+    ]);
+
+    grunt.registerTask('build', [
         'clean:build',
         'copy',
         'compass:build',
         'slim:build',
-        'connect:server',
-        'watch'
+    ]);
+    grunt.registerTask('default', [
+        'build',
+        'look'
     ]);
     grunt.registerTask('look', [
         'connect:server',
