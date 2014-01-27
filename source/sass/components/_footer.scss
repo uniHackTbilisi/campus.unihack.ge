@@ -7,28 +7,84 @@ footer{
     left:0;
     right:0;
     .feature{
+        &.prise{
+            $image :'prise.png';
+            p{
+                padding-left: (image-width($image)/10px * 1em + 1.0em)/($footer-font-size/1em)
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0.5em;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                width: image-width($image)/10px * 1em;
+                height: image-height($image)/10px * 1em;
+                @include background(inline-image($image));
+                background-size: image-width($image)/10px * 1em image-height($image)/10px * 1em; 
+            }
+        }
+        &.duration{
+            $image :'duration.png';
+            p{
+                padding-left: (image-width($image)/10px * 1em + 1.0em)/($footer-font-size/1em)
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0.5em;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                width: image-width($image)/10px * 1em;
+                height: image-height($image)/10px * 1em;
+                @include background(inline-image($image));
+                background-size: image-width($image)/10px * 1em image-height($image)/10px * 1em; 
+            }
+
+        }
+        &.place{
+            $image :'place.png';
+            p{
+                padding-left: (image-width($image)/10px * 1em + 1.0em)/($footer-font-size/1em)
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0.5em;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                width: image-width($image)/10px * 1em;
+                height: image-height($image)/10px * 1em;
+                @include background(inline-image($image));
+                background-size: image-width($image)/10px * 1em image-height($image)/10px * 1em; 
+            }
+
+        }
         float: left;
         height:$footer-height;
-        width: 97/3*1%;
-        padding:0 0.5%;
+        width: 100/3*1%;
+        padding:0;
         position: relative;
         &:after{
             content:'';
             position: absolute;
             bottom: 0;
-            right: 1em;
+            right: 1.5em;
             border:solid $footer-color 0.75em;
             border-top-color:transparent; 
             border-left-color:transparent; 
         }
         p{
             white-space: nowrap;
-            width: 100%;                   
             overflow: hidden;              /* "overflow" value must be different from "visible" */ 
             text-overflow:    ellipsis;
             font-size:$footer-font-size;
             line-height: $footer-height/$footer-font-size*1em;
             color:$footer-color;
+            padding-right:1em;
         }
     }
 }
