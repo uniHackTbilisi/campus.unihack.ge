@@ -8,14 +8,19 @@
 	bottom: 0;
 	margin: auto; 
 	width: 116em;
-	height:image-height($image) / 10px *1em + 10em;
+	// height:image-height($image) / 10px *1em + 10em;
+	height:50em;
 	.chat{
+		display: none;/*
 		width: image-width($image)/10px * 1em;
 		height: image-height($image)/10px * 1em;
 		@include background(inline-image($image));
 		background-size: image-width($image)/10px * 1em image-height($image)/10px * 1em; 
 		top: 10em;
-		position: absolute;
+		position: absolute;*/
+	}
+	.promo{
+		margin: 3em 0;
 	}
 	@import "baner";
 }
