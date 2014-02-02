@@ -79,34 +79,67 @@ header{
 		width: 40em;
 		margin: 0 auto;
 	}
+	.applay {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100%;
+	}
+	.buttons{
+		overflow: hidden;
+		position: relative;
+		 .row{
+			margin-bottom: 0;
+		}
+	}
+	input.participant, input.guest{
+		display: none;
+		&:checked ~ .buttons .type{
+			opacity: 0;
+		}
+		&:checked ~ .buttons .applay{
+			top: 0;
+		}
+		&:checked + .extra{
+			max-height: 20em;
+		}
+	}
 	.extra{
 		@include pie-clearfix;
 		overflow: hidden;
-		height: auto;
-		// height: 0;
+		max-height: 0;
+		@include transition(0.4s linear);
 	}
-	button,input{
+	label,input,{
 		width: 100%;
-		height: 2em;
+		height: 2.5em;
 		font-size: 1.5em;
-		line-height: 1.2em;
 		border: none;
 	}
-	input{
+	input[type=text]{
+		line-height: 1.2em;
 		padding: 0 1em;
+		background: hsl(0,0%,95%);
 	    @include box-sizing(border-box);
 		@include box-shadow(0 0 0 1px hsl(0,0%,40%) inset);
+		@include transition(0.2s linear);
+		&:hover{
+			background: hsl(0,0%,100%);
+		}
 		&:focus {
+			background: hsl(0,0%,100%);
 			outline:none;
 			@include box-shadow(0 0 0 1px lighten($blue,17%) inset);
 		}
 	}
-	button{
+	label,.submit{
+		@include transition(0.2s linear background);
+		line-height: 2.2em;
+		display: block;
 		cursor: pointer;
 		color: white;
 		background: $blue;
 		text-align: center;
-		@include transition(0.2s linear background);
 		&:hover{
 			background: lighten($blue,10%);
 		}
@@ -122,20 +155,20 @@ header{
 	}
 	.row{
 		@include pie-clearfix;
-		margin-bottom: 1%;
+		margin-bottom: 1.6%;
 		.full{
 			width: 100%; 
 		}
 		.left, .right{
-			width: 49.5%;
+			width: 49.2%;
 		}
 		.left{
 			float: left;
-			padding-right: 0.5%;
+			padding-right: 0.8%;
 		}
 		.right{
 			float: right;
-			padding-left: 0.5%;
+			padding-left: 0.8%;
 		}
 	}
 	//============[form]=====end

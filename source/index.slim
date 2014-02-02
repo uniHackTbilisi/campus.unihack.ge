@@ -26,7 +26,25 @@ html
           .row
             .full
               input.mail type="email" name="mail" id="mail" placeholder="ელფოსტა"
-          .extra
+          input.participant type="checkbox" name="participant" id="participant" value="participant"
+          .extra.participant
+            .row
+              .left
+                input.firstname type="text" name="firstname" id="firstname" placeholder="სახელი"
+              .right
+                input.lastname type="text" name="lastname" id="lastname" placeholder="გვარი"
+            .row
+              .left
+                input.id type="text" name="id" id="id" placeholder="პირადი ნომერი"
+              .right
+                input.birth type="text" name="birth" id="birth" placeholder="დაბადების თარიღი"
+            .row
+              .left
+                input.company type="text" name="company" id="company" placeholder="კომპანია"
+              .right
+                input.position type="text" name="position" id="position" placeholder="თანამდებობა"
+          input.guest type="checkbox" name="guest" id="guest" value="guest"
+          .extra.guest
             .row
               .left
                 input.firstname type="text" name="firstname" id="firstname" placeholder="სახელი"
@@ -37,11 +55,15 @@ html
                 input.company type="text" name="company" id="company" placeholder="კომპანია"
               .right
                 input.position type="text" name="position" id="position" placeholder="თანამდებობა"
-          .applay.row
-            .left
-              button.participant id="participant" მონაწილე
-            .right
-              button.guest id="guest" სტუმარი
+          .buttons
+            .type.row
+              .left
+                label for="participant" მონაწილე
+              .right
+                label for="guest" სტუმარი
+            .applay.row
+              input.submit.full type="submit" name="submit" id="submit" value="რეგისტრაცია"
+          
     footer
       .unihack uniHack
     .main
