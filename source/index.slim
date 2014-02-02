@@ -1,72 +1,70 @@
 doctype html
 html
   head
+    meta property="og:title" content="hack@MACS" 
+    meta property="og:type" content="website" 
+    meta property="og:image" content="http://macs.unihack.ge/images/social.png" 
+    meta property="og:url" content="http://macs.unihack.ge/" 
+    meta property="og:description" content="14-15-16 მარტი, თავისუფალი უნივერსიტეტის მათემატიკისა და კომპიუტერული მეცნიერებების სკოლა. ყველაზე დიდი სტუდენტური ჰაკათონი ევროპაში! 500+სტუდენტი და მოსწავლე, 5+უნივერსიტეტი, 20.000 ლარი საპრიზო ფონდი! Come and code like a motherfucker. DO EPIC SHIT!"
+    meta name="description" content="14-15-16 მარტი, თავისუფალი უნივერსიტეტის მათემატიკისა და კომპიუტერული მეცნიერებების სკოლა. ყველაზე დიდი სტუდენტური ჰაკათონი ევროპაში! 500+სტუდენტი და მოსწავლე, 5+უნივერსიტეტი, 20.000 ლარი საპრიზო ფონდი! Come and code like a motherfucker. DO EPIC SHIT!"
+    meta property="og:site_name" content="uniHack.ge" 
     meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    title hack@MACS - ყველაზე დიდი სტუდენტური ჰაკათონი ევროპაში - uniHack
+    meta name="viewport" content="width=device-width"
     link rel="stylesheet" href="/css/screen.css"
-    title hack@CAMPUS
-  body
     script src="scripts/app.js"
+  body
+    #bg-video
+    .bg-video-overlay
     header
-      nav
-        .registration
-          label.button for="show-checkbox" რეგისტრაცია
-          input#show-checkbox type="checkbox"
-          ul
-            li
-              a href="#" მონაწილე / გუნდი
-            li
-              a href="#" სტუმარი 
-        ul.navigation
-          li 
-            a href="#/main" მთავარი
-          li 
-            a href="#/speaker" სპიკერები
-          li 
-            a href="#/program" პროგრამა
-          li 
-            a href="https://docs.google.com/document/d/1QnT7-ucbs3EfbZYGp90yZ010voxOtovEO7FHK_XcVYY/" სპონსორებს
-        a.fb-event href="https://www.facebook.com/events/449121528548787/" title="ფეისბუქის ივენთი" ფეისბუქის ივენთი
-    .page-wrapper
-      .page-scroll-wrapper
-        section.page#main
-          .chat-wrapper
-            .chat
-            iframe.promo width="560" height="315" src="//www.youtube.com/embed/aEn9Tki2kwY" frameborder="0" allowfullscreen=true
-            .baner-wrapper
-              .header-wrapper
-                h1 hack@CAMPUS
-              .features-wrapper
-                ul
-                  li 500+ სუდენტი და მოსწავლე
-                  li 5+ უნივერსიტეტი
-                  li 
-                    | 20+ 
-                    span.marked პროფესიონალი
-                  li 10+ სპიკერი
-              .date-wrapper
-                date
-                  span.marked 14-15-16
-                  |  მარტი
-              .prize-wrapper
-                .prize
-                  .top
-                  .curve-top
-                  .curve-bottom
-                  .center-box-curve
-                  .center-box
-                    .fund data-after="ლარი" data-before="საპრიზო ფონდი" 
-                      | 20,000
-                  .bottom
-        section.page#speaker 
-          h1.soon მალე...
-        section.page#program
-          h1.soon მალე...
-        section.page#sponsor
-          h1.soon მალე...
+      .center
+        h1.logo hack@MACS 
+        h2.slogan ყველაზე დიდი სტუდენტური ჰაკათონი ევროპაში
+        form.register method="post"
+          .row
+            .full
+              input.mail type="text" name="mail" id="mail" placeholder="ელფოსტა"
+          input.participant type="checkbox" name="participant" id="participant" value="participant"
+          .extra.participant
+            .row
+              .left
+                input.firstname type="text" name="firstname" id="firstname" placeholder="სახელი"
+              .right
+                input.lastname type="text" name="lastname" id="lastname" placeholder="გვარი"
+            .row
+              .left
+                input.id type="text" name="id" id="id" placeholder="პირადი ნომერი"
+              .right
+                input.birth type="text" name="birth" id="birth" placeholder="დაბადების თარიღი"
+            .row
+              .left
+                input.company type="text" name="company" id="company" placeholder="კომპანია"
+              .right
+                input.position type="text" name="position" id="position" placeholder="თანამდებობა"
+          input.guest type="checkbox" name="guest" id="guest" value="guest"
+          .extra.guest
+            .row
+              .left
+                input.firstname type="text" name="firstname" id="firstname" placeholder="სახელი"
+              .right
+                input.lastname type="text" name="lastname" id="lastname" placeholder="გვარი"
+            .row
+              .left
+                input.company type="text" name="company" id="company" placeholder="კომპანია"
+              .right
+                input.position type="text" name="position" id="position" placeholder="თანამდებობა"
+          .buttons
+            .type.row
+              .left
+                label for="participant" მონაწილე
+              .right
+                label for="guest" სტუმარი
+            .applay.row
+              input.submit.full type="submit" name="submit" id="submit" value="რეგისტრაცია"
+          a.see-more href="#more" დაწვრილებითი ინფორმაცია
     footer
-      section.feature.prise 
-        p ჩვენ გვაქვს საჭმელი, სასმელი და უამრავი პრიზი
-      section.feature.duration 
-        p თქვენ გაქვთ 48 საათი, რათა შექმნათ რაიმე მაგარი
-      section.feature.place 
-        p დიდი დიღმის საუნივერსიტეტო კამპუსი
+      .unihack uniHack
+    section.main#more 
+      | მეტი ინფო
+
