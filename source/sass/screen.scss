@@ -6,17 +6,29 @@
 
 body,html{
     height:100%;
+}
+body{
     font-size:10px;
+    margin: 0;
+	background: black;
 }
 
-//===================HEADER===============================
-@import "components/header";
-@import "components/registration";
-@import "components/navigation";
-
-//===================PAGE===============================
-@import "components/page";
-@import "components/pagemain";
-
-//===================FOOTER===============================
-@import "components/footer";
+#bg-video{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+}
+.bg-video-overlay{
+	@include background-image(
+		radial-gradient(center, ellipse cover,  
+			hsla(0,0%,100%,0) 0%,
+			hsla(0,0%,0%,1) 100%
+		),url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQIW2NkYGDYDMQogBFdAMQHCRoTrRLDBABUBADsodh9BwAAAABJRU5ErkJggg==')
+	);
+	
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
