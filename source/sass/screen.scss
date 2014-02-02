@@ -25,7 +25,10 @@ body{
 			hsla(0,0%,0%,1) 100%
 		),url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQIW2NkYGDYDMQogBFdAMQHCRoTrRLDBABUBADsodh9BwAAAABJRU5ErkJggg==')
 	);
-	
+	.started &{
+		background-color: transparent; 
+	}
+	background-color: black;
 	position: absolute;
 	left: 0;
 	top: 0;

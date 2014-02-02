@@ -2,7 +2,6 @@ var hack = {
 	bg:{
 		mute: true,
 		ratio: 16/9,
-		start: 0,
 		id: 'bg-video',
 		videoId:'aEn9Tki2kwY'
 	}
@@ -42,29 +41,32 @@ hack = (function ($,window) {
 	};
 
 	var onPlayerStateChange = function (state) {
-        if (state.data === 0) {	// video ended
-            player.seekTo($.bg.start);	// restart
-        }
+		if (state.data === 1 && domPlayer.style.opacity == 0) { //play
+			document.body.className += ' started';
+		}else if(state.data === 0){
+			state.target.seekTo(0);
+		}
+		console.log('onPlayerStateChange',state);
 	};
 
 	var onPlayerReady = function (event) {
 		domPlayer = document.getElementById($.bg.id);
 		resize();
         if($.bg.mute) event.target.mute();
-        event.target.seekTo($.bg.start);
         event.target.playVideo();
 	};
 	window.onresize = resize;
 	window.onYouTubeIframeAPIReady = function () {
 		player = new YT.Player($.bg.id, {
-		height: window.innerHeight,	//TODO
-		width: window.innerWidth,	//TODO
+		height: 0,
+		width: 0,
 		videoId: $.bg.videoId,
         playerVars: {
             controls: 0,
             showinfo: 0,
             modestbranding: 1,
-            wmode: 'transparent'
+            wmode: 'transparent',
+            rel : 0,
         },
 		events: {
 			'onReady': onPlayerReady,
