@@ -76,7 +76,7 @@ header{
 
 	//============[form]=====start
 	.register{
-		width: 40em;
+		width: $form-width;
 		margin: 0 auto;
 	}
 	.applay {
@@ -88,6 +88,7 @@ header{
 	.buttons{
 		overflow: hidden;
 		position: relative;
+		margin-bottom: 1.6%;
 		 .row{
 			margin-bottom: 0;
 		}
@@ -110,14 +111,14 @@ header{
 		max-height: 0;
 		@include transition(0.4s linear);
 	}
-	label,input,{
+	label,input{
 		width: 100%;
-		height: 2.5em;
-		font-size: 1.5em;
+		height: $input-height;
+		font-size: $input-font;
 		border: none;
 	}
 	input[type=text]{
-		line-height: 1.2em;
+		line-height: $input-font;
 		padding: 0 1em;
 		background: hsl(0,0%,95%);
 	    @include box-sizing(border-box);
@@ -134,7 +135,7 @@ header{
 	}
 	label,.submit{
 		@include transition(0.2s linear background);
-		line-height: 2.2em;
+		line-height: $input-height;
 		display: block;
 		cursor: pointer;
 		color: white;
@@ -172,5 +173,20 @@ header{
 		}
 	}
 	//============[form]=====end
-
+	.see-more{
+		color: white;
+		display: block;
+		text-decoration: none;
+		line-height: $input-font;
+		@include text-shadow(0 1px hsl(0, 0%, 0%));
+		text-align: right;
+	}
 }//============[header]=====end
+section.main{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	background: white;
+	height: 100%;
+}

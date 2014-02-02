@@ -17,7 +17,6 @@ html
   body
     #bg-video
     .bg-video-overlay
-
     header
       .center
         h1.logo hack@MACS 
@@ -25,7 +24,7 @@ html
         form.register method="post"
           .row
             .full
-              input.mail type="email" name="mail" id="mail" placeholder="ელფოსტა"
+              input.mail type="text" name="mail" id="mail" placeholder="ელფოსტა"
           input.participant type="checkbox" name="participant" id="participant" value="participant"
           .extra.participant
             .row
@@ -63,9 +62,9 @@ html
                 label for="guest" სტუმარი
             .applay.row
               input.submit.full type="submit" name="submit" id="submit" value="რეგისტრაცია"
-          
+          a.see-more href="#more" დაწვრილებითი ინფორმაცია
     footer
       .unihack uniHack
-    .main
-      texti
+    section.main#more 
+      | მეტი ინფო
 
