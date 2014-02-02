@@ -5,8 +5,8 @@ html
     meta property="og:type" content="website" 
     meta property="og:image" content="http://macs.unihack.ge/images/social.png" 
     meta property="og:url" content="http://macs.unihack.ge/" 
-    meta property="og:description" content="14-15-16 მარტი, თავისუფალი უნივერსიტეტის მათემატიკისა და კომპიუტერული მეცნიერებების სკოლა. ყველაზე დიდი სტუდენტური ჰაკათონი ევროპაში! 500+სტუდენტი, 5+უნივერსიტეტი, 20.000 ლარი საპრიზო ფონდი! Come and code like a motherfucker. DO EPIC SHIT!"
-    meta name="description" content="14-15-16 მარტი, თავისუფალი უნივერსიტეტის მათემატიკისა და კომპიუტერული მეცნიერებების სკოლა. ყველაზე დიდი სტუდენტური ჰაკათონი ევროპაში! 500+სტუდენტი, 5+უნივერსიტეტი, 20.000 ლარი საპრიზო ფონდი! Come and code like a motherfucker. DO EPIC SHIT!"
+    meta property="og:description" content="14-15-16 მარტი, თავისუფალი უნივერსიტეტის მათემატიკისა და კომპიუტერული მეცნიერებების სკოლა. ყველაზე დიდი სტუდენტური ჰაკათონი ევროპაში! 500+სტუდენტი და მოსწავლე, 5+უნივერსიტეტი, 20.000 ლარი საპრიზო ფონდი! Come and code like a motherfucker. DO EPIC SHIT!"
+    meta name="description" content="14-15-16 მარტი, თავისუფალი უნივერსიტეტის მათემატიკისა და კომპიუტერული მეცნიერებების სკოლა. ყველაზე დიდი სტუდენტური ჰაკათონი ევროპაში! 500+სტუდენტი და მოსწავლე, 5+უნივერსიტეტი, 20.000 ლარი საპრიზო ფონდი! Come and code like a motherfucker. DO EPIC SHIT!"
     meta property="og:site_name" content="uniHack.ge" 
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
@@ -17,4 +17,33 @@ html
   body
     #bg-video
     .bg-video-overlay
-    .content-wrapper chemi kontenti
+
+    header
+      .center
+        h1.logo hack@MACS 
+        h2.slogan ყველაზე დიდი სტუდენტური ჰაკათონი ევროპაში
+        form.register method="post"
+          .row
+            .full
+              input.mail type="email" name="mail" id="mail" placeholder="ელფოსტა"
+          .extra
+            .row
+              .left
+                input.firstname type="text" name="firstname" id="firstname" placeholder="სახელი"
+              .right
+                input.lastname type="text" name="lastname" id="lastname" placeholder="გვარი"
+            .row
+              .left
+                input.company type="text" name="company" id="company" placeholder="კომპანია"
+              .right
+                input.position type="text" name="position" id="position" placeholder="თანამდებობა"
+          .applay.row
+            .left
+              button.participant id="participant" მონაწილე
+            .right
+              button.guest id="guest" სტუმარი
+    footer
+      .unihack uniHack
+    .main
+      texti
+
