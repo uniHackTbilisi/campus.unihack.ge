@@ -1,0 +1,19 @@
+footer{
+    $height:3em;
+    $unihack-margin:5em;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    height:$height;
+    margin:-1*($height+$unihack-margin) 0 0;
+    .unihack{
+        opacity: 0.8;
+        $unihack-img: 'unihack-logo.png';
+        @include hide-text;
+        @include background-image(inline-image($unihack-img));
+        width: image-width($unihack-img)/10px*1em;
+        height: image-height($unihack-img)/10px*1em;
+        margin:0 0 $unihack-margin $unihack-margin;      
+    }
+}

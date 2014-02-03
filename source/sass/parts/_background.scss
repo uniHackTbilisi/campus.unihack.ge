@@ -1,0 +1,23 @@
+#bg-video{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+}
+.bg-video-overlay{
+	@include background-image(
+		radial-gradient(center, ellipse cover,  
+			hsla(0,0%,100%,0) 0%,
+			hsla(0,0%,0%,1) 100%
+		),
+		url($bg-pattern)
+	);
+	.started &{
+		background-color: transparent; 
+	}
+	background-color: black;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
