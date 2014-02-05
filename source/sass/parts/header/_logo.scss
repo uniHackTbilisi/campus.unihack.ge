@@ -1,0 +1,21 @@
+$logo-img: 'hack-logo.png';
+$slogan-img: 'hack-slogan.png';
+.logo,.slogan{
+    font-size: 10px;
+    margin: 0 auto;
+    @include hide-text;
+    background-repeat: no-repeat;
+}
+.logo{
+    @include background-image(inline-image($logo-img));
+    width: image-width($logo-img);
+    height: image-height($logo-img);
+    margin-bottom: 1em;
+    margin-top: -1*(1+4em + (image-height($logo-img) + image-height($slogan-img))/10px*1em);
+}
+.slogan{
+    @include background-image(inline-image($slogan-img));
+    width: image-width($slogan-img);
+    height: image-height($slogan-img);
+    margin-bottom: 4em;
+}

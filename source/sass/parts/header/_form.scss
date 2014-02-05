@@ -1,0 +1,105 @@
+.register{
+    width: $form-width;
+    margin: 0 auto;
+}
+.applay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+}
+.buttons{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1.6%;
+     .row{
+        margin-bottom: 0;
+    }
+}
+input.participant, input.guest{
+    display: none;
+    &:checked ~ .buttons .type{
+        opacity: 0;
+    }
+    &:checked ~ .buttons .applay{
+        top: 0;
+    }
+    &:checked + .extra{
+        max-height: 20em;
+    }
+}
+.extra{
+    @include pie-clearfix;
+    overflow: hidden;
+    max-height: 0;
+    @include transition(0.4s linear);
+}
+label,input{
+    width: 100%;
+    height: $input-height;
+    font-size: $input-font;
+    border: none;
+}
+input[type=text]{
+    line-height: $input-font;
+    padding: 0 1em;
+    background: hsl(0,0%,95%);
+    @include box-sizing(border-box);
+    @include box-shadow(0 0 0 1px hsl(0,0%,40%) inset);
+    @include transition(0.2s linear);
+    &:hover{
+        background: hsl(0,0%,100%);
+    }
+    &:focus {
+        background: hsl(0,0%,100%);
+        outline:none;
+        @include box-shadow(0 0 0 1px lighten($blue,17%) inset);
+    }
+}
+label,.submit{
+    @include transition(0.2s linear background);
+    line-height: $input-height;
+    display: block;
+    cursor: pointer;
+    color: white;
+    background: $blue;
+    text-align: center;
+    &:hover{
+        background: lighten($blue,10%);
+    }
+    &:active{
+        background: lighten($blue,17%);
+    }
+    &:focus {
+        outline:none;
+    }
+}
+.mail{
+    text-align: center;
+}
+.row{
+    @include pie-clearfix;
+    margin-bottom: 1.6%;
+    .full{
+        width: 100%; 
+    }
+    .left, .right{
+        width: 49.2%;
+    }
+    .left{
+        float: left;
+        padding-right: 0.8%;
+    }
+    .right{
+        float: right;
+        padding-left: 0.8%;
+    }
+}
+.see-more{
+    color: white;
+    display: block;
+    text-decoration: none;
+    line-height: $input-font;
+    @include text-shadow(0 1px hsl(0, 0%, 0%));
+    text-align: right;
+}
