@@ -68,7 +68,7 @@ module.exports = function(grunt) {
                 }
             },
             sass: {
-                files: ['<%= config.source.sass %>**/**'],
+                files: ['<%= config.source.sass %>**/**/**'],
                 tasks: ['compass:build']
             },
             css: {

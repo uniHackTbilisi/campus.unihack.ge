@@ -16,7 +16,7 @@
         margin-bottom: 0;
     }
 }
-input.participant, input.guest{
+input.participant{
     display: none;
     &:checked ~ .buttons .type{
         opacity: 0;
@@ -95,11 +95,18 @@ label,.submit{
         padding-left: 0.8%;
     }
 }
-.see-more{
-    color: white;
-    display: block;
-    text-decoration: none;
-    line-height: $input-font;
-    @include text-shadow(0 1px hsl(0, 0%, 0%));
-    text-align: right;
+.for-sponsors{
+    a{
+        color: white;
+        text-decoration: none;
+        font-size:1.2em;
+        line-height: $input-font;
+        @include text-shadow(0 1px hsl(0, 0%, 0%));
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    }
 }

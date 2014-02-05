@@ -19,8 +19,16 @@ html
     .bg-video-overlay
     header
       .center
-        h1.logo hack@MACS 
-        h2.slogan ყველაზე დიდი სტუდენტური ჰაკათონი ევროპაში
+        hgroup
+          .primary-title
+            h1.logo hack@MACS 
+            h2.slogan ყველაზე დიდი სტუდენტური ჰაკათონი ევროპაში
+          .divider &gt;
+          .secondary-title
+            h3.hours 48 საათიანი ჰაკათონი
+            h3.hackers 500 მონაწილე
+            h3.spickers 10 სპიკერი და TECH TALCK
+            h3.prize 20.000 ლარი
         form.register method="post"
           .row
             .full
@@ -42,29 +50,18 @@ html
                 input.company type="text" name="company" id="company" placeholder="კომპანია"
               .right
                 input.position type="text" name="position" id="position" placeholder="თანამდებობა"
-          input.guest type="checkbox" name="guest" id="guest" value="guest"
-          .extra.guest
-            .row
-              .left
-                input.firstname type="text" name="firstname" id="firstname" placeholder="სახელი"
-              .right
-                input.lastname type="text" name="lastname" id="lastname" placeholder="გვარი"
-            .row
-              .left
-                input.company type="text" name="company" id="company" placeholder="კომპანია"
-              .right
-                input.position type="text" name="position" id="position" placeholder="თანამდებობა"
           .buttons
             .type.row
-              .left
-                label for="participant" მონაწილე
-              .right
-                label for="guest" სტუმარი
+              .full
+                label for="participant" რეგისტრაცი
             .applay.row
-              input.submit.full type="submit" name="submit" id="submit" value="რეგისტრაცია"
-          a.see-more href="#more" დაწვრილებითი ინფორმაცია
+              input.submit.full type="submit" name="submit" id="submit" value="დამთავრება"
+          .for-sponsors 
+            a.left href="#en" For Sponsors
+            a.right href="#ge" სპონსორებს
+          /a.see-more href="#more" დაწვრილებითი ინფორმაცია
     footer
       .unihack uniHack
-    section.main#more 
-      | მეტი ინფო
+      .date 14-15-16 მარტი
+    /section.main#more მეტი ინფო
 
