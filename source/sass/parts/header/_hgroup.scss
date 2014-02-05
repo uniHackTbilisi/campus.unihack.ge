@@ -1,0 +1,67 @@
+$logo-img: 'hack-logo.png';
+$slogan-img: 'hack-slogan.png';
+$divider-img: 'hack-divider.png';
+$hours-img: 'hack-hours.png';
+$hackers-img: 'hack-hackers.png';
+$spickers-img: 'hack-spickers.png';
+$prize-img: 'hack-prize.png';
+.logo, .slogan, .divider, .hours, .hackers, .spickers, .prize{
+    font-size: 10px;
+    @include hide-text;
+    background-repeat: no-repeat;
+}
+.logo{
+    @include background-image(inline-image($logo-img));
+    width: image-width($logo-img);
+    height: image-height($logo-img);
+    margin-bottom: 1em;
+}
+.slogan{
+    @include background-image(inline-image($slogan-img));
+    width: image-width($slogan-img);
+    height: image-height($slogan-img);
+}
+.primary-title{
+    float:left;
+    margin-top: 2em;
+}
+.divider{
+    float:left;
+    margin: 4em 2em 2em;
+    @include background-image(inline-image($divider-img));
+    width: image-width($divider-img);
+    height: image-height($divider-img);
+}
+.hours{
+    margin-bottom: 2em;
+    @include background-image(inline-image($hours-img));
+    width: image-width($hours-img);
+    height: image-height($hours-img);
+}
+.hackers{
+    margin-bottom: 2em;
+    @include background-image(inline-image($hackers-img));
+    width: image-width($hackers-img);
+    height: image-height($hackers-img);
+}
+.spickers{
+    margin-bottom: 1.5em;
+    @include background-image(inline-image($spickers-img));
+    width: image-width($spickers-img);
+    height: image-height($spickers-img);
+}
+.prize{
+    @include background-image(inline-image($prize-img));
+    width: image-width($prize-img);
+    height: image-height($prize-img);
+}
+.secondary-title{
+    float:left;
+}
+hgroup{
+    margin: -10em auto 3em;
+    height:13em;
+    width:60em;
+    position: relative;
+    //@include pie-clearfix;
+}

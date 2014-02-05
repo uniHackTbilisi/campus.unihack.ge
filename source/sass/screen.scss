@@ -15,7 +15,7 @@ body{
 /*============[background]============*/
 @import "parts/background";
 /*============[/background]============*/
-
+ 
 /*============[header]============*/
 @import "parts/header/all";
 /*============[/header]============*/
@@ -23,7 +23,8 @@ body{
 /*============[footer]============*/
 @import "parts/footer";
 /*============[/footer]============*/
- 
+
+
 section.main{
 	position: absolute;
 	left: 0;
