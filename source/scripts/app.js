@@ -125,10 +125,16 @@ hack = (function ($,window) {
 		
 
 		var submission = function(e) {
+			form.emailCheck(email);
+			form.nameCheck(firstname);
+			form.nameCheck(lastname);	
+			form.idCheck(id);
+
+
 			if(document.querySelectorAll('.warning').length) {
 				e.preventDefault();
 			}
-			console.log(document.querySelectorAll('.warning').length);
+
 		};
 
 
