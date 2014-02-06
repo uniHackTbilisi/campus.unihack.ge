@@ -91,7 +91,7 @@ hack = (function ($,window) {
 
 		errorField: function(field) {
 			field.className = 'warning';
-		},
+		}
 
 
 
@@ -156,7 +156,7 @@ hack = (function ($,window) {
             showinfo: 0,
             modestbranding: 1,
             wmode: 'transparent',
-            rel : 0,
+            rel : 0
         },
 		events: {
 			'onReady': onPlayerReady,

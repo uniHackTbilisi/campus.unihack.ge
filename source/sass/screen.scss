@@ -33,3 +33,43 @@ section.main{
 	background: white;
 	height: 100%;
 }
+
+.wrap {
+  background: #f2f2f2;;
+  border: 1px solid black;
+  height: 39px
+}
+
+.wrap select {
+  margin-top: 12px;
+
+}
+
+.years {
+  margin-left: -25px;
+}
+
+.lb {
+  display: block;
+  color: #ABABAB;
+  font-size: 15px;
+  text-align: left;
+  text-indent: 15px;
+  float: left;
+  margin-top: 12px
+}
+
+#transport-lb {
+  height: auto;
+  cursor: pointer;
+  background: none;
+  line-height: initial  ;
+}
+
+input#cv {
+  float: left;
+  display: block;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}

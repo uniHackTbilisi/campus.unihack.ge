@@ -29,27 +29,56 @@ html
             h3.hackers 500 მონაწილე
             h3.spickers 10 სპიკერი და TECH TALCK
             h3.prize 20.000 ლარი
-        form.register method="post"
+        form.register id="register" method="post" action="/register-api/participant" enctype= "multipart/form-data"
           .row
             .full
-              input.mail type="text" name="mail" id="mail" placeholder="ელფოსტა"
+              input.mail type="text" name="email" id="email" placeholder="ელფოსტა"
           input.participant type="checkbox" name="participant" id="participant" value="participant"
           .extra.participant
             .row
-              .left
-                input.firstname type="text" name="firstname" id="firstname" placeholder="სახელი"
-              .right
-                input.lastname type="text" name="lastname" id="lastname" placeholder="გვარი"
+              .full
+                input.name type="text" name="name" id="name" placeholder="სახელი, გვარი"
             .row
               .left
                 input.id type="text" name="id" id="id" placeholder="პირადი ნომერი"
               .right
-                input.birth type="text" name="birth" id="birth" placeholder="დაბადების თარიღი"
+                input.firstname type="text" name="university" id="university" placeholder="უნივერსიტეტი/სკოლა"
+            .row
+              .full
+                .wrap
+                  span.lb დაბადების თარიღი
+                  select.years id="years" name="birht_year"
+                  select.months id="months" name="birht_month"
+                  select.days id="days" name="birth_day"
+              .full
+                .wrap
+                  span.lb ატვირთეთ რეზიუმე/CV
+                  input.cv type="file" name="cv" id="cv" placeholder="cv"
             .row
               .left
-                input.company type="text" name="company" id="company" placeholder="კომპანია"
+                input.id type="text" name="github" id="github" placeholder="Github URL"
               .right
-                input.position type="text" name="position" id="position" placeholder="თანამდებობა"
+                input.firstname type="text" name="linkedin" id="linkedin" placeholder="LinkedIn URL"
+
+            .row
+              .full
+                .wrap
+                  span.lb მაისურის ზომა
+                  select.years id="tshirt_size" name="tshirt_size"
+                    option S
+                    option M
+                    option L
+                    option XL
+                    option XXL
+
+              .full
+                .wrap
+                  span.lb გჭირდებათ ტრანსპორტირება?
+                  select.transport id="transport" name="transport"
+                    option არა
+                    option კი - ბათუმიდან
+                    option კი - ქუთაისიდან
+
           .buttons
             .type.row
               .full
@@ -63,5 +92,11 @@ html
     footer
       .unihack uniHack
       .date 14-15-16 მარტი
+
+  script src="scripts/jquery-2.1.0.min.js"
+  script src="scripts/jquery.form.min.js"
+  script src="scripts/script.js"
+
+
     /section.main#more მეტი ინფო
 
