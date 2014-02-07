@@ -9,45 +9,42 @@
 
 jQuery(document).ready(function ($) {
 
-    $("#name").focus(function(e){
+    $("#name").focus(function (e) {
         $('.name-tooltip').show();
     });
 
-    $("#name").focusout(function(e){
+    $("#name").focusout(function (e) {
         $('.name-tooltip').hide();
     });
 
-    $("#id").focus(function(e){
+    $("#id").focus(function (e) {
         $('.id-tooltip').show();
     });
 
-    $("#id").focusout(function(e){
+    $("#id").focusout(function (e) {
         $('.id-tooltip').hide();
     });
 
-    $('#reg-label').click(function(e){
+    $('#reg-label').click(function (e) {
         $('.birthday-tooltip').show();
 
     });
 
-    $('input:text[name=email]').keypress(function(event) {
+    $('input:text[name=email]').keypress(function (event) {
 
         var keycode = (event.keyCode ? event.keyCode : event.which);
-        if(keycode == 13){
+        if (keycode == 13) {
             event.preventDefault();
-            $('#participant').attr('checked','checked');
+            $('#participant').attr('checked', 'checked');
         }
     });
-
-
-
 
 
     var options = {
         success: function (response, statusText, xhr, form) {
 
             var respObj = JSON.parse(response);
-            if(respObj.status === "success") {
+            if (respObj.status === "success") {
                 $('form').hide();
                 $('.reg-success').show();
             }
@@ -59,14 +56,14 @@ jQuery(document).ready(function ($) {
             console.log(e);
         },
 
-        beforeSubmit: function(arr, $form, options) {
+        beforeSubmit: function (arr, $form, options) {
             console.log("im called");
             var status = true;
-            for(i in arr){
+            for (i in arr) {
                 console.log("im called inside");
                 var current = arr[i];
                 $('.' + current.name).removeClass("warning");
-                if(!current.value && (current.name === "name" || current.name === "id" || current.name === "email")){
+                if (!current.value && (current.name === "name" || current.name === "id" || current.name === "email" || current.name === "cv")) {
                     console.log("im called false");
                     $('.' + arr[i].name).addClass("warning");
                     console.log(jQuery(arr[i].name));
@@ -115,4 +112,21 @@ jQuery(document).ready(function ($) {
         return new Date(year, month, 0).getDate();
     }
 });
+
+
+(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-47865017-1', 'unihack.ge');
+ga('send', 'pageview');
+
 
