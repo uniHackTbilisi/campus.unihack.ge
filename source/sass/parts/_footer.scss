@@ -1,31 +1,80 @@
-footer{
-    $height:3em;
-    $margin:5em;
-    position:absolute;
-    top:100%;
-    left:0;
-    right:0;
-    height:$height;
-    margin:-1*($height+$margin) 0 0;
-    .unihack{
-        opacity: 0.8;
-        $unihack-img: 'unihack-logo.png';
-        @include hide-text;
-        @include background-image(inline-image($unihack-img));
-        width: image-width($unihack-img)/10px*1em;
-        height: image-height($unihack-img)/10px*1em;
-        float: left;
-        margin-left:$margin;
-    }
-    .date{
-        opacity: 0.8;
-        $date-img: 'hack-date.png';
-        @include hide-text;
-        @include background-image(inline-image($date-img));
-        width: image-width($date-img)/10px*1em;
-        height: image-height($date-img)/10px*1em;
-        float: right;
-        margin-top: 0.8em;
-        margin-right: $margin;
-    }
+footer {
+  $height: 3em;
+  $margin: 5em;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: $height;
+  margin: -1*($height+$margin) 0 0;
+  .unihack {
+    opacity: 0.8;
+    $unihack-img: 'unihack-logo.png';
+    @include hide-text;
+    @include background-image(inline-image($unihack-img));
+    width: image-width($unihack-img)/10px*1em;
+    height: image-height($unihack-img)/10px*1em;
+    float: left;
+    margin-left: $margin;
+    margin-top: 15px;
+  }
+  .date {
+    opacity: 0.8;
+    $date-img: 'hack-date.png';
+    @include hide-text;
+    @include background-image(inline-image($date-img));
+    width: image-width($date-img)/10px*1em;
+    height: image-height($date-img)/10px*1em;
+    float: right;
+    margin-top: 0.8em;
+    margin-right: $margin;
+  }
+  .location {
+    opacity: 0.8;
+    $date-img: 'hack-location.png';
+    @include hide-text;
+    @include background-image(inline-image($date-img));
+    width: image-width($date-img)/10px*1em;
+    height: image-height($date-img)/10px*1em;
+    float: right;
+    margin-top: 0.8em;
+    margin-right: $margin;
+  }
+
+
+
+
+}
+
+.sponsor-en {
+  opacity: 0.8;
+  $date-img: 'sponsor-en.png';
+  @include hide-text;
+  @include background-image(inline-image($date-img));
+  width: image-width($date-img)/10px*1em;
+  height: image-height($date-img)/10px*1em;
+  float: right;
+  margin-top: 0.8em;
+}
+
+.sponsor-ka {
+  opacity: 0.8;
+  $date-img: 'sponsor-ka.png';
+  @include hide-text;
+  @include background-image(inline-image($date-img));
+  width: image-width($date-img)/10px*1em;
+  height: image-height($date-img)/10px*1em;
+  float: right;
+  margin-top: 0.8em;
+}
+
+.sponsor-star {
+  opacity: 0.8;
+  $date-img: 'sponsor-star.png';
+  @include hide-text;
+  @include background-image(inline-image($date-img));
+  width: image-width($date-img)/10px*1em;
+  height: image-height($date-img)/10px*1em;
+  float: right;
+  margin-top: 0.8em;
 }

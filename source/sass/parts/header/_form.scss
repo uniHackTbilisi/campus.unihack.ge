@@ -19,7 +19,7 @@
   }
 }
 
-input.participant {
+input#participant {
   display: none;
   &:checked ~ .buttons .type {
     opacity: 0;

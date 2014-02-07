@@ -3,19 +3,20 @@
 @import "config";
 @import "partials";
 
-
-body,html{
-    height:100%;
+body, html {
+  height: 100%;
 }
-body{
-    font-size:10px;
-    margin: 0;
-	background: black;
-} 
+
+body {
+  font-size: 10px;
+  margin: 0;
+  background: black;
+}
+
 /*============[background]============*/
 @import "parts/background";
 /*============[/background]============*/
- 
+
 /*============[header]============*/
 @import "parts/header/all";
 /*============[/header]============*/
@@ -24,14 +25,13 @@ body{
 @import "parts/footer";
 /*============[/footer]============*/
 
-
-section.main{
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 100%;
-	background: white;
-	height: 100%;
+section.main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: white;
+  height: 100%;
 }
 
 .wrap {
@@ -63,13 +63,97 @@ section.main{
   height: auto;
   cursor: pointer;
   background: none;
-  line-height: initial  ;
+  line-height: initial;
 }
 
 input#cv {
   float: left;
   display: block;
   width: 200px;
-  margin-top: 10px;
+  margin-top: 4px;
   margin-left: 10px;
+  height: 24px;
+  padding: 5px;
+}
+
+.for-sponsors {
+  position: absolute;
+  z-index: 10000;
+  right: 5em;
+}
+
+.transport, .tshirt {
+  width: 50%;
+  float: left;
+}
+
+select.transport, select.tshirt-size {
+  margin-top: 11px;
+}
+
+select.transport {
+  margin-left: 30px;
+}
+
+.row.shirt-transport {
+  background: white;
+  height: 38px;
+}
+
+footer .fb-like {
+  margin-top: 25px;
+  float: left;
+  width: 0px;
+}
+
+.tooltip {
+  position: absolute;
+  background: #0f8e99;
+  color: white;
+  width: 130px;
+  border-radius: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.left-tooltip {
+  left: -145px;
+}
+
+.right-tooltip {
+  right: -145px;
+}
+
+.hidden-tooltip {
+  display: none;
+}
+
+form {
+  position: relative;
+}
+
+.warning {
+  -webkit-box-shadow: 0 0 5px 2px #f83a3a inset;
+  -moz-box-shadow: 0 0 5px 2px #f83a3a inset;
+  box-shadow: 0 0 5px 2px #f83a3a inset;
+}
+
+.reg-success {
+  width: 414px;
+  margin: 0 auto;
+  display: none;
+}
+.socials {
+  width: 100%;
+  height: 100px;
+}
+
+.socials .fb-like {
+  margin-right: 10px;
+}
+
+.reg-success h1 {
+  color: #ffffff;
+  font-size: 1.3em;
+  margin-bottom: 8px;
 }

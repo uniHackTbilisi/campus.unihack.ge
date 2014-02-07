@@ -3,7 +3,7 @@ var hack = {
 		mute: true,
 		ratio: 16/9,
 		id: 'bg-video',
-		videoId:'aEn9Tki2kwY'
+		videoId:'jgjbJYC2cLQ'
 	}
 };
 
@@ -63,7 +63,7 @@ hack = (function ($,window) {
 		},
 
 		nameCheck: function(field) {
-			var reg =  /^([ \u00c0-\u01ffa-zA-Z'\-])+$/;
+			var reg =  /^[ა-ჰ ]+$/;
 			form.check(field,reg);
 		},
 
@@ -98,9 +98,8 @@ hack = (function ($,window) {
 	} 
 
 	window.onload = function() {
-		var email = document.getElementById('mail');
-		var	firstname = document.getElementById('firstname');
-		var lastname = document.getElementById('lastname');
+		var email = document.getElementById('email');
+		var	firstname = document.getElementById('name');
 		var id = document.getElementById('id');
 		var birth = document.getElementById('birth');
 		var company = document.getElementById('company');
@@ -111,15 +110,24 @@ hack = (function ($,window) {
 			form.emailCheck(email);
 		};
 
+        email.onkeyup = function() {
+            form.emailCheck(email);
+        };
+
 		firstname.onblur = function() {
 			form.nameCheck(firstname);
 		};
 
-		lastname.onblur = function() {
-			form.nameCheck(lastname);
+        firstname.onkeyup = function() {
+			form.nameCheck(firstname);
 		};
 
+
 		id.onblur = function() {
+			form.idCheck(id);
+		};
+
+		id.onkeyup = function() {
 			form.idCheck(id);
 		};
 		
