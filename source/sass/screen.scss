@@ -103,7 +103,9 @@ select.transport {
 footer .fb-like {
   margin-top: 25px;
   float: left;
-  width: 0px;
+  width: 5em;
+  height: 2em;
+  overflow: hidden;
 }
 
 .tooltip {
