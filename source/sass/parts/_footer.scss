@@ -8,7 +8,7 @@ footer {
   height: $height;
   margin: -1*($height+$margin) 0 0;
   .unihack {
-    opacity: 0.8;
+    @extend %opacity-hover;
     $unihack-img: 'unihack-logo.png';
     @include hide-text;
     @include background-image(inline-image($unihack-img));
@@ -19,7 +19,7 @@ footer {
     margin-top: 15px;
   }
   .date {
-    opacity: 0.8;
+    opacity: 0.75;
     $date-img: 'hack-date.png';
     @include hide-text;
     @include background-image(inline-image($date-img));
@@ -30,7 +30,7 @@ footer {
     margin-right: $margin;
   }
   .location {
-    opacity: 0.8;
+    @extend %opacity-hover;
     $date-img: 'hack-location.png';
     @include hide-text;
     @include background-image(inline-image($date-img));
@@ -46,8 +46,15 @@ footer {
 
 }
 
+%opacity-hover{
+  opacity: 0.75;
+  @include transition(opacity 0.2s);
+  &:hover{
+    opacity: 1;
+  }
+}
 .sponsor-en {
-  opacity: 0.8;
+  @extend %opacity-hover;
   $date-img: 'sponsor-en.png';
   @include hide-text;
   @include background-image(inline-image($date-img));
@@ -58,7 +65,7 @@ footer {
 }
 
 .sponsor-ka {
-  opacity: 0.8;
+  @extend %opacity-hover;
   $date-img: 'sponsor-ka.png';
   @include hide-text;
   @include background-image(inline-image($date-img));
@@ -69,7 +76,7 @@ footer {
 }
 
 .sponsor-star {
-  opacity: 0.8;
+  opacity: 0.75;
   $date-img: 'sponsor-star.png';
   @include hide-text;
   @include background-image(inline-image($date-img));
