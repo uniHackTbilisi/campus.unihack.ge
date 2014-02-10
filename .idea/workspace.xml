@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95a4af9b-96bb-44de-99e3-1c33b6918cdf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/sass/parts/header/_hgroup.scss" afterPath="$PROJECT_DIR$/source/sass/parts/header/_hgroup.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/scripts/app.js" afterPath="$PROJECT_DIR$/source/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.slim" afterPath="$PROJECT_DIR$/source/index.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/scripts/script.js" afterPath="$PROJECT_DIR$/source/scripts/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="95a4af9b-96bb-44de-99e3-1c33b6918cdf" name="Default" comment="" />
     <ignored path="macs.unihack.ge.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,25 +26,25 @@
       <file leaf-file-name="index.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/index.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1963" selection-end="2542" vertical-scroll-proportion="-8.75" vertical-offset="465" max-vertical-offset="1920">
+            <state line="45" column="0" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1965">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="28" selection-start="88" selection-end="88" vertical-scroll-proportion="-2.8846154" vertical-offset="0" max-vertical-offset="2880">
+            <state line="137" column="12" selection-start="3175" selection-end="3175" vertical-scroll-proportion="0.33333334" vertical-offset="1930" max-vertical-offset="2895">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="37" selection-start="40" selection-end="40" vertical-scroll-proportion="0.076271184" vertical-offset="0" max-vertical-offset="1575">
+            <state line="9" column="37" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2070">
               <folding />
             </state>
           </provider>
@@ -100,9 +94,9 @@
       <file leaf-file-name="_hgroup.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/sass/parts/header/_hgroup.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="25" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1290">
+            <state line="74" column="25" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.0" vertical-offset="937" max-vertical-offset="1275">
               <folding>
-                <marker date="1391743740000" expanded="true" signature="1647:1727" placeholder="{...}" />
+                <marker date="1391785488000" expanded="true" signature="1701:1726" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -137,9 +131,9 @@
         <option value="$PROJECT_DIR$/secret.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/source/sass/parts/header/_hgroup.scss" />
-        <option value="$PROJECT_DIR$/source/scripts/app.js" />
-        <option value="$PROJECT_DIR$/source/scripts/script.js" />
         <option value="$PROJECT_DIR$/source/index.slim" />
+        <option value="$PROJECT_DIR$/source/scripts/script.js" />
+        <option value="$PROJECT_DIR$/source/scripts/app.js" />
       </list>
     </option>
   </component>
@@ -340,6 +334,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BAK/macs.unihack.ge" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -350,23 +352,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -394,6 +388,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -405,10 +400,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -439,7 +433,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="25" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1290">
           <folding>
-            <marker date="1391743740000" expanded="true" signature="1647:1727" placeholder="{...}" />
+            <marker date="1391785488000" expanded="true" signature="1701:1726" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -460,9 +454,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1230">
-          <folding />
-        </state>
+        <state line="76" column="0" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1230" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
@@ -477,9 +469,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/parts/header/_form.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="2175">
-          <folding />
-        </state>
+        <state line="21" column="6" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="2175" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/secret.json">
@@ -496,9 +486,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1230">
-          <folding />
-        </state>
+        <state line="76" column="0" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1230" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
@@ -513,9 +501,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/parts/header/_form.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2175">
-          <folding />
-        </state>
+        <state line="21" column="6" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2175" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/secret.json">
@@ -532,9 +518,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="20" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="548" max-vertical-offset="1200">
-          <folding />
-        </state>
+        <state line="73" column="20" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="548" max-vertical-offset="1200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/parts/header/_all.scss">
@@ -544,9 +528,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/parts/header/_form.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="8" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="2175">
-          <folding />
-        </state>
+        <state line="34" column="8" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="2175" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/scripts/script.js">
@@ -568,9 +550,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="20" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="548" max-vertical-offset="1200">
-          <folding />
-        </state>
+        <state line="73" column="20" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="548" max-vertical-offset="1200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/parts/header/_all.scss">
@@ -580,9 +560,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/parts/header/_form.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="8" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="2175">
-          <folding />
-        </state>
+        <state line="34" column="8" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="2175" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/scripts/script.js">
@@ -624,9 +602,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/parts/header/_form.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="240" selection-end="427" vertical-scroll-proportion="0.32890365" vertical-offset="117" max-vertical-offset="2175">
-          <folding />
-        </state>
+        <state line="21" column="0" selection-start="240" selection-end="427" vertical-scroll-proportion="0.32890365" vertical-offset="117" max-vertical-offset="2175" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/images/hack-date.png">
@@ -653,9 +629,7 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1731" column="0" selection-start="27704" selection-end="27704" vertical-scroll-proportion="0.33333334" vertical-offset="25764" max-vertical-offset="57195">
-          <folding />
-        </state>
+        <state line="1731" column="0" selection-start="27704" selection-end="27704" vertical-scroll-proportion="0.33333334" vertical-offset="25764" max-vertical-offset="57195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/_partials.scss">
@@ -682,9 +656,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="6" selection-start="2114" selection-end="2116" vertical-scroll-proportion="-8.36" vertical-offset="1907" max-vertical-offset="2460">
-          <folding />
-        </state>
+        <state line="155" column="6" selection-start="2114" selection-end="2116" vertical-scroll-proportion="-8.36" vertical-offset="1907" max-vertical-offset="2460" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/parts/_footer.scss">
@@ -708,37 +680,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/parts/header/_hgroup.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="25" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1290">
+        <state line="74" column="25" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.0" vertical-offset="937" max-vertical-offset="1275">
           <folding>
-            <marker date="1391743740000" expanded="true" signature="1647:1727" placeholder="{...}" />
+            <marker date="1391785488000" expanded="true" signature="1701:1726" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/parts/_background.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="88" selection-end="88" vertical-scroll-proportion="-2.8846154" vertical-offset="0" max-vertical-offset="2880">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/index.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1963" selection-end="2542" vertical-scroll-proportion="-8.75" vertical-offset="465" max-vertical-offset="1920">
+        <state line="45" column="0" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1965">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="37" selection-start="40" selection-end="40" vertical-scroll-proportion="0.076271184" vertical-offset="0" max-vertical-offset="1575">
+        <state line="9" column="37" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="12" selection-start="3175" selection-end="3175" vertical-scroll-proportion="0.33333334" vertical-offset="1930" max-vertical-offset="2895">
           <folding />
         </state>
       </provider>

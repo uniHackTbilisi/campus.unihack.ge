@@ -135,7 +135,7 @@ hack = (function ($,window) {
 		var submission = function(e) {
 			form.emailCheck(email);
 			form.nameCheck(firstname);
-			form.nameCheck(lastname);	
+			
 			form.idCheck(id);
 
 
