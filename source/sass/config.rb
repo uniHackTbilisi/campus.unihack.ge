@@ -8,6 +8,8 @@ css_dir = "build/css"
 sass_dir = "source/sass"
 images_dir = "source/images"
 javascripts_dir = "source/scripts"
+fonts_dir = "source/fonts"
+fonts_path = "/fonts"
 
 
 # You can select your preferred output style here (can be overridden via the command line):
