@@ -10,31 +10,12 @@
     width:96em;
     margin:0 auto 0;
   }
-  .faq{
-    width:60em;
-    margin:0 auto 0;
-  }
-  h3{
-    //font-weight:bold;
-    color: #0dabba;
-    font-size:3.2em;
-    margin:0.75em 0 0.75em 0.46875em;
-  }
-  p{
-    color: #111111;
-    margin:0 0 2em 1.25em;
-    font-size:1.2em;
-    line-height:1.2em
-  }
-  h4{
-    color:#2f9497;
-    font-size:1.4em;
-    margin-bottom:0.5em;
-  }
-  .faq-item{
-  }
 }
 
+/*============[faq]============*/
+@import "faq";
+/*============[/faq]============*/
+ 
 .sponsors{
   margin-top:8em;
   h3{

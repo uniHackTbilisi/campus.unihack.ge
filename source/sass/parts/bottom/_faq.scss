@@ -1,0 +1,56 @@
+.faq{
+  width:60em;
+  margin:2em auto 0;
+  position:relative; 
+  h3{
+    //font-weight:bold;
+    color: #0dabba;
+    font-size:3.2em;
+    margin:0 0 0.75em 0.46875em;
+    &:before{
+      $ufo: 'ufo.png';
+      content:'';
+      position:absolute;
+      left:-1 * image-width($ufo);
+      height:image-height($ufo);
+      width:image-width($ufo);
+      @include background(inline-image($ufo));
+      
+    }
+  }
+  p{
+    color: #111111;
+    margin:0 0 1.5em 1.25em;
+    font-size:1.2em;
+    line-height:1.2em
+  }
+  h4{
+    font-size:1.4em;
+    margin-bottom:0.5em;
+    a{
+    color:#2f9497;
+      text-decoration:none;
+    }
+  }
+  .faq-item{
+    position:relative;
+    padding-top:0.5em;
+    &:before{
+      $question:'question.png';
+      content:'';
+      position:absolute;
+      left:-1 * image-width($question) - 5px;
+      opacity:0;
+      top:2px;
+      height:image-height($question);
+      width:image-width($question);
+      @include background(inline-image($question));
+      //@include transition(opacity 0.1s);
+    }
+    &:hover,&:target{
+      &:before{
+        opacity:1;
+      }
+    }
+  }
+}
