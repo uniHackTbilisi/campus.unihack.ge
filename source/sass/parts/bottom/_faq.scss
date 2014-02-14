@@ -7,6 +7,7 @@
     color: #0dabba;
     font-size:3.2em;
     margin:0 0 0.75em 0.46875em;
+    font-family: Roboto, arial, sans-serif;
     &:before{
       $ufo: 'ufo.png';
       content:'';
@@ -21,14 +22,16 @@
   p{
     color: #111111;
     margin:0 0 1.5em 1.25em;
-    font-size:1.2em;
-    line-height:1.2em
+    font-size:1.6em;
+    line-height:1.2em;
+    font-family: 'Nino Medium';
   }
   h4{
-    font-size:1.4em;
+    font-size:2em;
     margin-bottom:0.5em;
     a{
-    color:#2f9497;
+      font-family: 'Nino Mtavruli';
+      color:#2f9497;
       text-decoration:none;
     }
   }
