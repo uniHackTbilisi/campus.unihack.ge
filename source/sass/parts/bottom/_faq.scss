@@ -30,13 +30,15 @@
     font-family: 'Nino Medium';
   }
   h4{
+    font-family: 'Nino Mtavruli';
     font-size:2em;
     margin-bottom:0.5em;
     a{
-      font-family: 'Nino Mtavruli';
-      color:#2f9497;
       text-decoration:none;
     }
+  }
+  a{
+    color:#2f9497;
   }
   .faq-item{
     position:relative;
