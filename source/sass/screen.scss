@@ -154,3 +154,32 @@ form {
   font-size: 1.3em;
   margin-bottom: 8px;
 }
+
+.arrow-down {
+width: 0px;
+height: 0px;
+border-left: 25px solid transparent;
+border-right: 25px solid transparent;
+border-top: 25px solid #0f8e99;
+-webkit-transition: 0.2s linear background;
+-moz-transition: 0.2s linear background;
+-o-transition: 0.2s linear background;
+transition: 0.2s linear background;
+cursor: pointer;
+position: absolute;
+bottom: -22px;
+left: 45%;
+}
+
+
+.arrow-down:hover {
+  border-top: 25px solid #14b9c8;
+  -webkit-transition: 0.2s linear background;
+-moz-transition: 0.2s linear background;
+-o-transition: 0.2s linear background;
+transition: 0.2s linear background;
+}
+
+.faq {
+  padding-top: 1em;
+}
