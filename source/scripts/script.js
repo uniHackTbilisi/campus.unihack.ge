@@ -147,4 +147,6 @@ jQuery(function() {
 ga('create', 'UA-47865017-1', 'unihack.ge');
 ga('send', 'pageview');
 
+Holder.add_theme("unihack", {background:"#2f9497", foreground:"#fff", size:11, font: "Monaco"})
+
 
