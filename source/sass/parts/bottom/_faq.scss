@@ -1,6 +1,6 @@
 
 .faq{
-  width:75em;
+  width:90em;
   margin:2em auto 0;
   position:relative; 
   b{
@@ -8,6 +8,7 @@
   }
   h3{
     font-family: Roboto, arial, sans-serif;
+    text-align: left;
     &:before{
       $ufo: 'ufo.png';
       content:'';
@@ -22,13 +23,13 @@
   p{
     color: #111111;
     margin:0 0 1.5em 1.25em;
-    font-size:1.8em;
+    font-size:1.6em;
     line-height:1.2em;
     font-family: 'Nino Medium';
   }
   h4{
     font-family: 'Nino Mtavruli';
-    font-size:2em;
+    font-size:1.75em;
     margin-bottom:0.5em;
     text-align:left;
     a{
@@ -41,6 +42,9 @@
   .faq-item{
     position:relative;
     padding-top:0.75em;
+    float: left;
+    width: 50%;
+    min-height: 19em;
     &:before{
       $question:'question.png';
       content:'';
@@ -53,7 +57,7 @@
       @include background(inline-image($question));
       //@include transition(opacity 0.1s);
     }
-    &:hover,&:target{
+    &:target{
       &:before{
         opacity:1;
       }
