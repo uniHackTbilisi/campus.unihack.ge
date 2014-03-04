@@ -6,3 +6,6 @@
     $select: unquote($select);
     @include experimental(pointer-events, $select, -moz, -webkit, not -o, not -ms, -khtml, official);
 }
+@function px2em($pixel, $base:10px){
+  @return ($pixel/1px) / ($base/1px) * 1em;
+}

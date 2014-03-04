@@ -1,0 +1,102 @@
+.speakers{
+	$section-bg:  #eaedf2;
+	$main-color: hsl(182, 53%, 50%);
+	background: $section-bg;
+	padding:px2em(140px) 0 px2em(305px) 0;
+	&:after{
+		border-left: solid $section-bg 45em;
+	}
+	&:before{
+		border-right: solid $section-bg 45em;
+	}
+	.speakers-list{
+		list-style: none;
+		padding:0;
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		} 
+		.topic{
+			position: absolute;
+			text-shadow: 0 1px #000;
+			color: #fff;
+			font-size: px2em(15px);
+			top: px2em(50px,15px);
+			left: px2em(10px,15px);
+			right: px2em(10px,15px);
+		}
+		.inner{
+			overflow: hidden;
+			margin: 1em;
+			padding: 4em 0;
+			position: relative;
+			background: $main-color;
+			$radous:2em;
+			height: 22em + 7em;
+			cursor: pointer;
+			&:before, &:after {
+				content: "";
+				position: absolute;
+				width: $radous * 2;
+				height: $radous * 2;
+				background: $section-bg;
+				@include border-radius(50%);
+				margin: 0 auto;
+				left: 0;
+				right: 0;
+			}
+			&:before {
+			 	top: $radous * -1;
+			}
+			&:after {
+			 	bottom: $radous * -1;
+			}
+			&:hover .info{
+				top: 19.5em;
+				.position {
+					opacity: 1;
+				}
+			}
+		}
+		li{
+			float: left;
+			width: 25%;
+			// @include box-sizing(border-box);
+		}
+		img{
+			width: 22em;
+			height: 22em;
+			display: block;
+		}
+		.info{
+			background: $main-color;
+			padding: 2em 1em 0; // 2em + + 5 em  = 7em
+			position: absolute;
+			top: 22em + 4em;
+			bottom: 4em;
+			overflow: hidden;
+			right: 0;
+			@include transition(top .3s ease-in-out);
+			left: 0;
+		}
+		.name{
+            font-family: 'Nino Mtavruli';
+			font-size: 2em;
+			//height: px2em(20px,20px); // 20 px + 10 px  = 30px // xazebs ertmanetze ajens es
+			padding: 0 0 px2em(10px,20px);
+		} 
+		.position{
+			opacity: 0;
+			font-size: 1.5em;
+			line-height: px2em(20px,15px); // 20 px 
+			height:px2em(20px,15px);
+			@include transition(opacity .3s ease-in-out);
+		}
+		.name , .position{	 // 20px + 30px = 50px = 5em
+			color: #fff;
+			text-align: center;
+			display: block;
+		}
+	}
+}
