@@ -1,3 +1,38 @@
 
 .sponsors{
+    .peta img{        
+        width: 959px;
+        height: 190px;
+    }
+    .tera img{        
+        width: 319px;
+        height: 130px;
+    }
+    .giga img{        
+        width: 239px;
+        height: 110px;
+    }
+    .mega {
+        .sponsor-item{
+            margin:0 1em;
+            img{
+                width: 191px;
+                height: 90px;
+            }
+            
+        }
+    }
+    .kilo img{
+        width: 159px;
+        height: 70px;
+    }
+}
+.partners, .media-partners, .kilo, .mega, .giga, .tera, .peta{
+    text-align:center;
+}
+.partners, .media-partners{
+    img{
+        width: 320px;
+        height: 130px;
+    }
 }
