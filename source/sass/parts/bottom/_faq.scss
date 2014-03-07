@@ -3,6 +3,7 @@
   width:90em;
   margin:2em auto 0;
   position:relative; 
+  @include clearfix();
   b{
     font-weight:bold;
   }
