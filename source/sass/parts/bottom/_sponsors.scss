@@ -30,9 +30,12 @@
 .partners, .media-partners, .kilo, .mega, .giga, .tera, .peta{
     text-align:center;
 }
+.partners .partner-item{
+    margin:0 1em;
+}
 .partners, .media-partners{
     img{
-        width: 320px;
-        height: 130px;
+        width: 250px;
+        height: 102px;
     }
 }
