@@ -31,18 +31,17 @@ nav#menu {
 				padding: 0 10px;
 				color: white;
 				background: $blue;
-				font-size: normal;
-				font-family: 'Times';
 				height: 26px;
 				width: 100px;
 				font-family: 'Nino Mtavruli';
+				left: -170px;
 				@include transition(all .2s linear);
+                &.en {
+                    font-family: 'Times';
+                }
 				&:hover {
 					@include transform(scale(1.1));
 				}
-				left: -170px;
-
-				// @include transition(all .1s linear);
 				&:after {
 					content: "";
 					position: absolute;
