@@ -44,67 +44,6 @@ html
               !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
 
-
-        form.register id="register" method="post" action="/register-api/participant" enctype= "multipart/form-data"
-          .row
-            .full
-              input.mail.email type="text" name="email" id="email" placeholder="ელფოსტა"
-          input.participant type="checkbox" name="participant" id="participant" value="participant"
-          .extra.participant#participant
-            .row
-              .left
-                span.tooltip.name-tooltip.left-tooltip.hidden-tooltip მხოლოდ ქართული სიმბოლოები
-                input.name type="text" name="name" id="name" placeholder="სახელი, გვარი"
-              .right
-                span.tooltip.birthday-tooltip.right-tooltip.hidden-tooltip დაბადების თარიღი
-                .wrap
-                  select.years id="years" name="birht_year"
-                  select.months id="months" name="birht_month"
-                  select.days id="days" name="birth_day"
-            .row
-              .left
-                span.tooltip.id-tooltip.left-tooltip.hidden-tooltip 11 ნიშნა პირადი ნომერი
-                input.id type="text" name="id" id="id" placeholder="პირადი ნომერი"
-              .right
-                input.university type="text" name="university" id="university" placeholder="უნივერსიტეტი/სკოლა"
-            .row
-
-              .full
-                .wrap
-                  span.lb ატვირთეთ რეზიუმე/CV
-                  input.cv type="file" name="cv" id="cv" placeholder="cv"
-            .row
-              .left
-                input.github type="text" name="github" id="github" placeholder="Github URL"
-              .right
-                input.firstname type="text" name="linkedin" id="linkedin" placeholder="LinkedIn URL"
-
-            .row.shirt-transport
-              .full
-                .tshirt
-                  span.lb მაისურის ზომა
-                  select.tshirt-size id="tshirt_size" name="tshirt_size"
-                    option S
-                    option M
-                    option L
-                    option XL
-                    option XXL
-                .transport
-                  span.lb ქალაქი
-                  select.transport id="transport" name="transport"
-                    option თბილისი
-                    option ბათუმი
-                    option ქუთაისი
-                    option სხვა
-
-          .buttons
-            .type.row
-              .full
-                label id="reg-label" for="participant" რეგისტრაცია
-            .applay.row
-              input.submit.full type="submit" name="submit" id="submit" value="დამთავრება"
-
-          /a.see-more href="#more" დაწვრილებითი ინფორმაცია
     footer
       a href="https://www.facebook.com/unihackge"
         .unihack uniHack
