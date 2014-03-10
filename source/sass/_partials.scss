@@ -9,3 +9,20 @@
 @function px2em($pixel, $base:10px){
   @return ($pixel/1px) / ($base/1px) * 1em;
 }
+
+@mixin left-position($initial-position, $count) {
+	@for $i from 1 through 4 {
+		&:hover li:nth-child(#{$i}) {
+			a {
+				// left: -($initial-position + ($i*20px));
+				@include transition(left #{$i*100}ms linear);
+			}
+		}
+		li:nth-child(#{$i}) {
+			a {
+				left: -($initial-position + ($i*20px));
+				// @include transition(left #{$i*100}ms linear);
+			}
+		}
+	}
+}

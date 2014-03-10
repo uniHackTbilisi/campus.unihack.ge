@@ -1,0 +1,61 @@
+nav#menu {
+	display: block;
+	position: fixed;
+	top: 30px;
+	left: 0;
+	z-index: 100;	
+	width: 100px;
+	ul {
+		width: 20px;
+		&:hover {
+			width: auto;
+			li {
+				a {
+					left: 0 !important;
+				}
+			}
+			
+		}
+		li {
+			margin: 5px 0;
+			position: relative;
+			height: 26px;
+			
+			a {
+				display: block;
+				position: absolute;
+				text-align: left;
+				text-decoration: none;
+				font-size: 14px;
+				line-height: 160%;
+				padding: 0 10px;
+				color: white;
+				background: $blue;
+				font-size: normal;
+				font-family: 'Times';
+				height: 26px;
+				width: 100px;
+				@include transition(all .2s linear);
+				&:hover {
+					@include transform(scale(1.1));
+				}
+				left: -170px;
+
+				// @include transition(all .1s linear);
+				&:after {
+					content: "";
+					position: absolute;
+					display: block;
+					right: -20px;
+					top: 0;
+					// height: 100%;
+					border-left: 20px solid $blue;
+					border-top: 13px solid transparent;
+					border-bottom: 13px solid transparent;
+				}
+			}
+		}
+		$count: int(4);
+		@include left-position(100px,$count);
+	}
+}
