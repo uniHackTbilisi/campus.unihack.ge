@@ -2,7 +2,7 @@
 	$section-bg:  #eaedf2;
 	$main-color: hsl(182, 53%, 50%);
 	background: $section-bg;
-	padding:px2em(140px) 0 px2em(305px) 0;
+	padding:px2em(140px) 0  0 ;
 	display: table;
 	&:after{
 		border-left: solid $section-bg 45em;
