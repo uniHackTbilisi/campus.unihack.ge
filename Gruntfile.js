@@ -33,6 +33,7 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     '<%= config.build.base %>index.html': '<%= config.source.base %>index.slim',
+                    '<%= config.build.base %>agenda/index.html': '<%= config.source.base %>agenda/index.slim',
                 }
             }
         },
@@ -78,11 +79,11 @@ module.exports = function(grunt) {
                 }
             },
             slim: {
-                files: ['<%= config.source.base %>/*.slim'],
+                files: ['<%= config.source.base %>/**/*.slim'],
                 tasks: ['slim:build']
             },
             html: {
-                files: ['<%= config.build.base %>*.html'],
+                files: ['<%= config.build.base %>**/*.html'],
                 options: {
                     livereload: live,
                 }
