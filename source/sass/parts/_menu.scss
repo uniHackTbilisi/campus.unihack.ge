@@ -55,7 +55,9 @@ nav#menu {
 				}
 			}
 		}
-		$count: int(4);
-		@include left-position(100px,$count);
+		
+
+		
+		@include left-position(100px);
 	}
 }

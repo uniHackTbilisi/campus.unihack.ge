@@ -1,3 +1,28 @@
+// @function number($string) {
+// 	$strings: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';
+// 	$numbers: 0 1 2 3 4 5 6 7 8 9;
+
+// 	$result: 0;
+	
+	
+
+// 	@for $i from 1 through str-length($string) {
+// 		$char: str-slice($string, $i, $i);
+// 		$index: str-index($string, $char);
+
+// 		@if not $index {
+// 			@warn "Unknown character `#{$char}`. ";
+// 			@return false;	
+// 		}
+		
+// 		$number: nth($numbers, $index);
+// 		$result: $result*10 + $number;
+// 	}
+
+// 	@return $result;
+// }
+
+
 @mixin user-select($select) {
     $select: unquote($select);
     @include experimental(user-select, $select, -moz, -webkit, not -o, not -ms, -khtml, official);
@@ -10,8 +35,9 @@
   @return ($pixel/1px) / ($base/1px) * 1em;
 }
 
-@mixin left-position($initial-position, $count) {
-	@for $i from 1 through 4 {
+@mixin left-position($initial-position) {
+	
+	@for $i from 1 through 5 {
 		&:hover li:nth-child(#{$i}) {
 			a {
 				// left: -($initial-position + ($i*20px));
@@ -26,3 +52,5 @@
 		}
 	}
 }
+
+
